@@ -1,16 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
-import { Search } from './Search';
-import { CustomSelect } from './CustomSelect';
+import { Search } from "./Search"
+import { CustomSelect } from "./CustomSelect"
 
 const optionsMap = {
-  'Africa': { value: 'Africa', label: 'Africa' },
-  'America': { value: 'America', label: 'America' },
-  'Asia': { value: 'Asia', label: 'Asia' },
-  'Europe': { value: 'Europe', label: 'Europe' },
-  'Oceania': { value: 'Oceania', label: 'Oceania' },
+  Africa: { value: "Africa", label: "Africa" },
+  America: { value: "America", label: "America" },
+  Asia: { value: "Asia", label: "Asia" },
+  Europe: { value: "Europe", label: "Europe" },
+  Oceania: { value: "Oceania", label: "Oceania" },
 }
-const options = Object.values(optionsMap);
+const options = Object.values(optionsMap)
 
 const Wrapper = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
   }
-`;
+`
 
 export const Controls = () => {
   return (
@@ -33,9 +33,9 @@ export const Controls = () => {
         placeholder="Filter by Region"
         isClearable
         isSearchable={false}
-        value={''}
+        value={""}
         onChange={() => {}}
       />
     </Wrapper>
-  );
-};
+  )
+}
