@@ -107,7 +107,6 @@ export const Info = (props) => {
   } = props
   const dispatch = useDispatch()
   const neighbors = useSelector(selectNeighbors)
-  console.log(neighbors)
 
   useEffect(() => {
     if (borders.length) {

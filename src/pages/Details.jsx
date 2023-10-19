@@ -22,7 +22,6 @@ export const Details = () => {
       dispatch(clearDetails())
     }
   }, [countryName, dispatch])
-  console.log(status)
 
   return (
     <div>

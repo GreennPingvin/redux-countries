@@ -44,7 +44,6 @@ export const loadNeighbors =
     client
       .get(api.filterByCode(borders))
       .then(({ data }) => {
-        console.log(data)
         dispatch(setNeighbors(data.map((country) => country.name)))
       })
       .catch(console.error)
