@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit"
-import { themeReducer } from "./features/Theme/theme-slice"
-import { controlsReducer } from "./store/controls/controls-reducer"
+import { themeReducer } from "./features/theme/theme-slice"
 import { countriesReducer } from "./store/countries/countries-reducer"
 import { detailsReducer } from "./store/details/details-reducer"
 import * as api from "./config"
 import axios from "axios"
+import { controlsReducer } from "./features/controls/controls-slice"
 
 export const store = configureStore({
   reducer: {

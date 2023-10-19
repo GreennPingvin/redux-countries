@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { List } from "../components/List"
 import { Card } from "../components/Card"
-import { Controls } from "../components/Controls"
+import { Controls } from "../features/controls/Controls"
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { loadCountries } from "../store/countries/countries-actions"
@@ -9,7 +9,7 @@ import {
   selectCountriesInfo,
   selectVisibleCountries,
 } from "../store/countries/countries-selectors"
-import { selectControls } from "../store/controls/controls-selectors"
+import { selectControls } from "../features/controls/controls-slice"
 
 export const HomePage = () => {
   const navigate = useNavigate()
