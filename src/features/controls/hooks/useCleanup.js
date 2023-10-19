@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux"
-import { clearControls } from "./controls-slice"
+import { clearControls } from "../controlsSlice"
 
 export const useCleanup = () => {
   const dispatch = useDispatch()

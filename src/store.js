@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit"
 import { themeReducer } from "./features/theme/theme-slice"
-import { countriesReducer } from "./store/countries/countries-reducer"
-import { detailsReducer } from "./store/details/details-reducer"
 import * as api from "./config"
 import axios from "axios"
-import { controlsReducer } from "./features/controls/controls-slice"
+import { controlsReducer } from "./features/controls/controlsSlice"
+import { countriesReducer } from "./features/countries/countriesSlice"
+import { detailsReducer } from "./features/details/detailsSlice"
 
 export const store = configureStore({
   reducer: {
@@ -21,5 +21,6 @@ export const store = configureStore({
           api,
         },
       },
+      serializableCheck: false,
     }),
 })

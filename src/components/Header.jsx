@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 import { Container } from "./Container"
 import ThemeSwitcher from "../features/theme/ThemeSwitcher"
-import { useCleanup } from "../features/controls/useCleanup"
+import { useCleanup } from "../features/controls/hooks/useCleanup"
 
 const HeaderEl = styled.header`
   box-shadow: var(--shadow);

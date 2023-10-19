@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Search } from "./Search"
 import { CustomSelect } from "./CustomSelect"
-import { useRegion } from "./useRegion"
+import { useRegion } from "./hooks/useRegion"
 
 const optionsMap = {
   Africa: { value: "Africa", label: "Africa" },
